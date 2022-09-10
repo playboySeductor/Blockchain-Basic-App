@@ -1,4 +1,4 @@
-# Our Project
+# Our Project🤗 
 VIDEO-LINK:-
 
 Prerequisites:
@@ -43,38 +43,34 @@ There is a seperate widhraw function that follows the withdrawal design pattern 
 
 There is no owner of the contract, and anyone can put his/her art for sale and tokenize it or buy it. If at any point the frontend application is censored down, the contract is untouched as it is stored on-chain along with IPFS hash.
 
-**BASIC INFRASTRUCTURE**
+😎😎**BASIC INFRASTRUCTURE**😎😎
 
-1)Get USD/MATIC Price Feed with Chainlink.
+👉Get USD/MATIC Price Feed with Chainlink.
 
-2)Upload Art file to IPFS.
+👉Upload Art file to IPFS.
 
-3)Recieve IPFS hash.
+👉Recieve IPFS hash.
 
-4)Bundle all TX details, sign and complete with Portis.
+👉Bundle all TX details, sign and complete with Portis.
 
-5)Store art item auction on Matic Network where auction smart contract is deployed.
+👉Store art item auction on Matic Network where auction smart contract is deployed.
 
 **FUTURE SCALIBILITY**
 
-1)In future we plan to use Pinata to store all the metadata of our NFT off-chain and Biconomy to make the first transaction gasless for a user. We will also implement DAO for contract changes and product development and create upgradable contracts through proxy pattern.
+✌In future we plan to use Pinata to store all the metadata of our NFT off-chain and Biconomy to make the first transaction gasless for a user. We will also implement DAO for contract changes and product development and create upgradable contracts through proxy pattern.
 
-2)We are working on to increase the decentralization as much as possible to prevent any sort of extra storage rather than blockchain itself
+✌We are working on to increase the decentralization as much as possible to prevent any sort of extra storage rather than blockchain itself
 
-**CHALLENGES ENCOUNTERED AND RESOLVED**
+😎😎**CHALLENGES ENCOUNTERED AND RESOLVED**😎😎
 
-1)*RE-ENTREANCY ATTACK*-It was prevented by using a withdrawal-pattern design decision where the logic is implemented first and transfer is done at last.
+🎭*RE-ENTREANCY ATTACK*-It was prevented by using a withdrawal-pattern design decision where the logic is implemented first and transfer is done at last.
 
-2)*DDoS ATTACK*-We went through functions to check no fallback function or any other function can be exploited
+🎭*DDoS ATTACK*-We went through functions to check no fallback function or any other function can be exploited
 
-3)*Decentralized storage*-We did not want a centralized point of control and failure hence we opted for IPFS.
+🎭*Decentralized storage*-We did not want a centralized point of control and failure hence we opted for IPFS.
 
-4)*Decentralized Price-Feed and Easy Onboarding*-Chainlink was integrated for getting price feed of Matic/USD.
+🎭*Decentralized Price-Feed and Easy Onboarding*-Chainlink was integrated for getting price feed of Matic/USD.We used Portis Wallet for easy integration and user friendly UI.
 
-We used Portis Wallet for easy integration and user friendly UI.
+🎭*High gas fees*-We deployed on Layer-2 solutionand choose Matic network to reduce gas fees and fasten the transactions
 
-5)*High gas fees*-We deployed on Layer-2 solution
-
-and choose Matic network to reduce gas fees and fasten the transactions
-
-6)*Bots bidding*-Just like centralized exchanges are filled with bots which manupilate the price, same can be the case with NFTs. We set a minimum increment which is set by seller.
+🎭*Bots bidding*-Just like centralized exchanges are filled with bots which manupilate the price, same can be the case with NFTs. We set a minimum increment which is set by seller.
