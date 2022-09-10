@@ -46,9 +46,13 @@ There is no owner of the contract, and anyone can put his/her art for sale and t
 **BASIC INFRASTRUCTURE**
 
 1)Get USD/MATIC Price Feed with Chainlink.
+
 2)Upload Art file to IPFS.
+
 3)Recieve IPFS hash.
+
 4)Bundle all TX details, sign and complete with Portis.
+
 5)Store art item auction on Matic Network where auction smart contract is deployed.
 
 **FUTURE SCALIBILITY**
@@ -60,10 +64,17 @@ There is no owner of the contract, and anyone can put his/her art for sale and t
 **CHALLENGES ENCOUNTERED AND RESOLVED**
 
 1)*RE-ENTREANCY ATTACK*-It was prevented by using a withdrawal-pattern design decision where the logic is implemented first and transfer is done at last.
+
 2)*DDoS ATTACK*-We went through functions to check no fallback function or any other function can be exploited
+
 3)*Decentralized storage*-We did not want a centralized point of control and failure hence we opted for IPFS.
+
 4)*Decentralized Price-Feed and Easy Onboarding*-Chainlink was integrated for getting price feed of Matic/USD.
+
 We used Portis Wallet for easy integration and user friendly UI.
+
 5)*High gas fees*-We deployed on Layer-2 solution
+
 and choose Matic network to reduce gas fees and fasten the transactions
+
 6)*Bots bidding*-Just like centralized exchanges are filled with bots which manupilate the price, same can be the case with NFTs. We set a minimum increment which is set by seller.
