@@ -1,51 +1,8 @@
-<div align="center">
-      <h1> <img src="https://www.thewindowsclub.com/wp-content/uploads/2021/03/Etherium.png" width="500px"><br/>NFT Marketplace</h1>
-     </div>
+The seller sets the minimum price of art X at 10Eth and the increment value is 1Eth. If Bidder named Sachin bids 15Eth, The highest Bid is 11Eth(highestBid) and the amount stored internally as the highest bidding amount is 15Eth(highestBindingBid). 
+If a person called Sanchita bids 12Eth, Sachin's highest bid of 13Eth will automatically be staked. In case no one bids after 11Eth bid of Sachin, then Sachin is the highest bidder and when the owner of the art stops the auction, the Token will be minted for 11Eth and rest of the 4Eth will be returned to Sachin. 
+Scenarios of Bidder over-bidding his own bid, other bidders under-bidding the Highestbid or the highestBindingBid are covered.
 
-# Description
-NFT Marketplace template for creation, sale, and purchase of digital art as NFTs.
+``Widthraw()``:
+There is a seperate widhraw function that follows the withdrawal design pattern to prevent re-entrenacy attacks. Each user withdraws his or her own funds.  
 
-
-# Tech Used
- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-      
-## Live Preview
-[Demo](https://nft-marketplace-ui.netlify.app/)
-
-## Build Setup
-
-``` bash
-# clone project
-$ git clone https://github.com/legome0937/NFT-Marketplace-UI.git
-
-# install dependencies
-$ npm install
-
-# serve with host at localhost:8000
-$ npm start
-```
-
-# Screenshot
-!["React Movie App"](https://raw.githubusercontent.com/kasim393/NFT-Marketplace/main/src/assets/ss1.png)
-
-!["React Movie App"](https://raw.githubusercontent.com/kasim393/NFT-Marketplace/main/src/assets/ss4.png)
-
-# Resource
-
-    Google font: https://fonts.google.com/
-    
-    FontAwesome : https://fontawesome.com/
-    
-    Figma : https://uifreebies.net/figma/cryptoket-app-ui-kit-free
-    
-
-### Task
-- [x] Home page
-- [x] Detail page
-- [x] Login page
-- [x] Register page
-- [x] Create item page
-- [x] Profile page
-- [ ] Payment
-
- 
+There is no owner of the contract, and anyone can put his/her art for sale and tokenize it or buy it. If at any point the frontend application is censored down, the contract is untouched as it is stored on-chain along with IPFS hash.
